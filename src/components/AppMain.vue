@@ -13,7 +13,7 @@ export default {
             {
                 "title": 'more about damon vaughn',
                 "text": 'Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologis and the author of the multi- milion copy bestseller "The Story of my life."'
-            }
+            },
         }
     }
 }

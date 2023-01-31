@@ -12,6 +12,7 @@ export default {
     <div id="about" class="text-center d-flex">
         <h1>{{ title }}</h1>
         <h3>{{ text }}</h3>
+        <button>Fare component neutro bottone</button>
     </div>
 </template>
 
