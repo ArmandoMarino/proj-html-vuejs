@@ -1,7 +1,10 @@
 <script>
-// import 
+import buyButtons from './base_pagination/buyButtons.vue';
 export default {
     name: 'AppHero',
+    components: {
+        buyButtons
+    }
 }
 </script>
 
@@ -29,7 +32,8 @@ export default {
                 </p>
             </div>
             <div class="b-latest-book">
-
+                <buy-buttons :placeHolderLeft="'Buy on Amazon'" :placeHolderRight="'Buy on Apple Store'"
+                    :imageAgencyLeft="`\e90a`"></buy-buttons>
             </div>
 
         </div>
