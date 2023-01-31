@@ -19,13 +19,19 @@ export default {
 
         <!-- LATEST-BOOK -->
         <div class="latest-book ">
-            <img src="../assets/img/header/book-widget.png" alt="book-widget">
-            <h4>Latest Book Release</h4>
-            <p>d. Vaughn autobiography</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Odio illo quidem fugit pariatur provident cupiditate sint quam
-                consequatur numquam nam?
-            </p>
+            <div class="t-latest-book">
+                <img src="../assets/img/header/book-widget.png" alt="book-widget">
+                <h4>Latest Book Release</h4>
+                <p>d. Vaughn autobiography</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio illo quidem fugit pariatur provident cupiditate sint quam
+                    consequatur numquam nam?
+                </p>
+            </div>
+            <div class="b-latest-book">
+
+            </div>
+
         </div>
     </section>
 </template>
