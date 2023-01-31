@@ -6,9 +6,9 @@ export default {
 </script>
 
 <template>
-    <section id="hero" class="">
+    <section id="hero" class="d-flex">
         <!-- DAILY REVIEW -->
-        <div class="daily">
+        <div class="daily ">
             <h1>Damon Vaughn</h1>
             <h3>Best-selling author and the most
                 influential public intellectual in the
@@ -18,7 +18,7 @@ export default {
         </div>
 
         <!-- LATEST-BOOK -->
-        <div class="latest-book">
+        <div class="latest-book ">
             <img src="../assets/img/header/book-widget.png" alt="book-widget">
             <h4>Latest Book Release</h4>
             <p>d. Vaughn autobiography</p>
@@ -35,10 +35,13 @@ export default {
     background-image: url(../assets/img/header/hero-07-2x.jpg);
     min-height: 500px;
 
-    .daily {}
+    .daily {
+        height: 50%;
+        flex-basis: 40%;
+    }
 
     .latest-book {
-        height: 200px;
+        flex-basis: 40%;
     }
 }
 </style>
