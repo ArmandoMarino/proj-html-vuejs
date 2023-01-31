@@ -15,9 +15,8 @@ export default {
 </script>
 
 <template>
-    <header>
-        <img src="../assets/img/header/author-logo-round.png" alt="logo">
-
+    <header class="d-flex justify-content-between">
+        <img class="img-fluid" src="../assets/img/header/author-logo-round.png" alt="logo">
         <nav-bar :lists="navlist"></nav-bar>
     </header>
 </template>
@@ -25,6 +24,11 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 150px;
-    background-color: red;
+    background-size: cover;
+    background-color: transparent;
+
+    img {
+        height: 150px;
+    }
 }
 </style>

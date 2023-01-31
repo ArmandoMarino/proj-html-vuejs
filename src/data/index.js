@@ -5,7 +5,8 @@ const navlist = [
     'my blog',
     'meetups',
     'shop',
-    'contact me'
+    'contact me',
+    'icon'
 ]
 
 const criticsArticles = [
