@@ -78,4 +78,29 @@ const moreArticles = [
     }
 
 ]
-export { navlist, criticsArticles, eventsArticles, moreArticles }
+
+
+const recentArticles = [
+    {
+        'id': '1',
+        'title': '20 creative tips',
+        'text': 'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.',
+        'img': '20-Tips-scaled.jpg',
+        'author': 'admin',
+    },
+    {
+        'id': '2',
+        'title': "what's on your booklist?",
+        'text': 'Lorem ipsum dolor sit amet.',
+        'img': 'thumb-13-2x-700x441.jpg',
+        'author': 'admin',
+    }, {
+        'id': '3',
+        'title': 'book signing',
+        'text': 'Lorem ipsum dolor sit amet.',
+        'img': 'thumb-08-2x-700x441.jpg',
+        'author': 'admin',
+    }
+
+]
+export { navlist, criticsArticles, eventsArticles, moreArticles, recentArticles }
