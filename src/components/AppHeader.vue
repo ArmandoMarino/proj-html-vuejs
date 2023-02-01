@@ -23,12 +23,17 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    height: 150px;
+    // height: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
     background-size: cover;
     background-color: transparent;
 
     img {
         height: 150px;
+        position: relative;
     }
 }
 </style>

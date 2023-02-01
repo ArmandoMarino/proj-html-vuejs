@@ -15,5 +15,8 @@ export default {
 </template>
 
 <style>
-
+a {
+  text-decoration: none;
+  color: white;
+}
 </style>

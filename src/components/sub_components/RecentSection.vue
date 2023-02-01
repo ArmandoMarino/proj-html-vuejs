@@ -1,48 +1,48 @@
 <script>
-import { criticsArticles } from '../../data'
+import { recentArticles } from '../../data'
 import card from '../neutro_components/card.vue';
 export default {
-    name: 'critics',
+    name: 'recentSection',
     components: {
         card
     },
     data() {
         return {
-            criticsArticles,
+            recentArticles,
         }
     },
 }
 </script>
 
 <template>
-    <section id="critics" class="container">
-        <div class="d-flex">
-            <div>
-                <h1>What th Critics Say</h1>
-                <p>TESTIMONIALS FROM AROUND THE WORLD</p>
+    <section id="recent">
+        <div class="container">
+            <div class="d-flex">
+                <div>
+                    <h1>What th Critics Say</h1>
+                    <p>TESTIMONIALS FROM AROUND THE WORLD</p>
+                </div>
+                <button>CIAO</button>
             </div>
-            <button>CIAO</button>
-        </div>
-        <!-- CARDS -->
-        <div class="d-flex">
-            <div class="left d-flex justify-content-center align-items-center">
-                <card :class="'big-card'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
-                    :image="criticsArticles[0].img" :alt="criticsArticles[0].title" :daily="criticsArticles[0].daily"
-                    :author="criticsArticles[0].author">
-                </card>
-            </div>
-            <div class="right">
-                <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
-                    :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
-                    :daily="criticsArticles[1].daily" :author="criticsArticles[1].author">
-                </card>
-                <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
-                    :text="criticsArticles[2].text" :image="criticsArticles[2].img" :alt="criticsArticles[2].title"
-                    :daily="criticsArticles[2].daily" :author="criticsArticles[2].author">
-                </card>
+            <!-- CARDS -->
+            <div class="d-flex">
+                <div class="left d-flex justify-content-center">
+                    <div class="big-card">
+                        <card :class="'thumb-card'" :title="recentArticles[0].title" :thumbPath="recentArticles[0].img"
+                            :text="recentArticles[0].text"></card>
+                    </div>
 
+                </div>
+                <div class="right d-flex flex-column justify-content-between align-items-center">
+                    <card :class="'thumb-card small-card'" :title="recentArticles[1].title"
+                        :thumbPath="recentArticles[1].img" :text="recentArticles[1].text"></card>
+                    <card :class="'thumb-card small-card'" :title="recentArticles[2].title"
+                        :thumbPath="recentArticles[2].img" :text="recentArticles[2].text"></card>
+
+                </div>
             </div>
         </div>
+
     </section>
 
 </template>
@@ -52,39 +52,45 @@ export default {
 
 // CUSTOM CARD CLASSES FOR SECTIONS
 // BIG-CARD
-.big-card {
-    background-image: url(../../assets/img/testimonial2-2x.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 80%;
-    border-bottom-right-radius: 100px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px;
-    line-height: 30px;
-}
-
-// SMALL-CARD
-.small-card {
+#recent {
     background-color: $pm-cream;
-    margin: 0 auto;
 
-    width: 80%;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 20px;
-}
+    .big-card {
+        height: 95%;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    // SMALL-CARD
+    .small-card {
+        background-color: white;
+        height: 98%;
+        width: 66%;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 20px;
+    }
 
 
-// GENERICS
-.left {
-    flex-basis: 60%;
-}
+    // GENERICS
+    .left {
+        flex-basis: 70%;
+        height: 150%;
+    }
 
-.right {
-    flex-basis: 40%;
+    .right {
+        flex-basis: 40%;
+        height: 70%;
+    }
+
+
+
+
 }
 </style>

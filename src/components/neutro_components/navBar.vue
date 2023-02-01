@@ -12,7 +12,7 @@ export default {
 <template>
     <nav>
         <ul>
-            <li v-for="list in lists">{{ list }}</li>
+            <li v-for="list in lists"><a href="">{{ list }}</a></li>
         </ul>
     </nav>
 </template>
@@ -30,6 +30,7 @@ nav {
             height: 50%;
             padding: 20px;
             text-transform: capitalize;
+            font-weight: 600;
         }
     }
 }

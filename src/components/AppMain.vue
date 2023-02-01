@@ -6,6 +6,7 @@ import critics from './sub_components/critics.vue';
 import EventsSection from './sub_components/EventsSection.vue';
 import SubscribeSection from './sub_components/SubscribeSection.vue';
 import MoreSection from './sub_components/MoreSection.vue';
+import RecentSection from './sub_components/RecentSection.vue';
 export default {
     name: 'AppMain',
     components: {
@@ -15,7 +16,8 @@ export default {
         critics,
         EventsSection,
         SubscribeSection,
-        MoreSection
+        MoreSection,
+        RecentSection
     },
     data() {
         return {
@@ -38,6 +40,7 @@ export default {
         <events-section></events-section>
         <subscribe-section></subscribe-section>
         <more-section></more-section>
+        <recent-section></recent-section>
     </main>
 </template>
 

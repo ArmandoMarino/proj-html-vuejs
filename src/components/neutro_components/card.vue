@@ -36,7 +36,7 @@ export default {
 <template>
     <div :class="class" class="my-card">
         <!-- IF thumbPath exist RENDER THUMBIMAGE -->
-        <div class="thumb" v-if="thumbPath"><img :class="class3" :src="imagePath" :alt="alt"></div>
+        <div class="thumb" v-if="thumbPath"><img class="img-fluid" :class="class3" :src="imagePath" :alt="alt"></div>
         <h2>{{ title }}</h2>
         <hr>
         <p v-if="text">{{ text }}</p>
@@ -50,9 +50,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.my-card>* {
+    padding: 5px;
+}
+
 .thumb {
     img {
-        width: 100%;
         display: inline-block;
     }
 }
@@ -74,5 +77,10 @@ export default {
 
 h2 {
     text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+hr {
+    margin: 0;
 }
 </style>
