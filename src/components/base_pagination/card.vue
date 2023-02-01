@@ -9,6 +9,7 @@ export default {
         alt: String,
         daily: String,
         author: String,
+        class2: String
     },
     computed: {
         imagePath() {
@@ -24,10 +25,12 @@ export default {
 <template>
     <div :class="class" class="my-card">
         <h2>{{ title }}</h2>
-        <hr>
+        <span>
+            <hr>
+        </span>
         <p>{{ text }}</p>
-        <div class="d-flex justify-content-center align-item-center">
-            <img :src="imagePath" :alt="alt">
+        <div class="d-flex align-item-center" :class="class2">
+            <img class="img-fluid" :src="imagePath" :alt="alt">
             <p>{{ author }},</p>
             <p>{{ daily }}</p>
         </div>
@@ -36,7 +39,21 @@ export default {
 
 <style lang="scss" scoped>
 .my-card {
-    margin: 10px;
+
+    div {
+        background-color: transparent;
+
+        p {
+            margin: 0;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        img {
+            padding: 5px;
+            height: 40px;
+        }
+    }
 
     h2 {
         text-transform: capitalize;

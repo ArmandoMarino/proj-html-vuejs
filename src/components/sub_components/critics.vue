@@ -31,13 +31,13 @@ export default {
             </card>
         </div>
         <div class="right">
-            <card :class="'small-card'" :title="criticsArticles[1].title" :text="criticsArticles[1].text"
-                :image="criticsArticles[1].img" :alt="criticsArticles[1].title" :daily="criticsArticles[1].daily"
-                :author="criticsArticles[1].author">
+            <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
+                :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
+                :daily="criticsArticles[1].daily" :author="criticsArticles[1].author">
             </card>
-            <card :class="'small-card'" :title="criticsArticles[2].title" :text="criticsArticles[2].text"
-                :image="criticsArticles[2].img" :alt="criticsArticles[2].title" :daily="criticsArticles[2].daily"
-                :author="criticsArticles[2].author">
+            <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
+                :text="criticsArticles[2].text" :image="criticsArticles[2].img" :alt="criticsArticles[2].title"
+                :daily="criticsArticles[2].daily" :author="criticsArticles[2].author">
             </card>
 
         </div>
@@ -62,12 +62,19 @@ export default {
     flex-direction: column;
     justify-content: center;
     padding: 80px;
+    line-height: 30px;
 }
 
+// SMALL-CARD
 .small-card {
     background-color: $pm-cream;
-}
+    margin: 0 auto;
 
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+}
 
 
 // GENERICS
