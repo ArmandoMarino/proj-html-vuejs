@@ -1,6 +1,6 @@
 <script>
 import { navlist } from '../data/index.js'
-import navBar from './base_pagination/navBar.vue';
+import navBar from './neutro_components/navBar.vue';
 export default {
     name: 'AppHeader',
     components: {

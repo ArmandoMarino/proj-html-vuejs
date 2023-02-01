@@ -1,6 +1,6 @@
 <script>
 import { criticsArticles } from '../../data'
-import card from '../base_pagination/card.vue';
+import card from '../neutro_components/card.vue';
 export default {
     name: 'critics',
     components: {

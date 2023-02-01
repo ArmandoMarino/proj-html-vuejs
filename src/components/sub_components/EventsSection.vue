@@ -1,6 +1,6 @@
 <script>
 import { eventsArticles } from '../../data'
-import card from '../base_pagination/card.vue';
+import card from '../neutro_components/card.vue';
 export default {
     name: 'EventsSection',
     components: {
@@ -28,7 +28,6 @@ export default {
                 <div class="d-flex">
                     <card v-for="eventsArticle in eventsArticles" :class="'thumb-card'" :title="eventsArticle.title"
                         :thumbPath="eventsArticle.img" :text="eventsArticle.text"></card>
-
                 </div>
             </div>
         </div>
