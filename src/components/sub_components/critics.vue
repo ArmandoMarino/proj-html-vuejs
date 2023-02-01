@@ -53,7 +53,7 @@ export default {
 // CUSTOM CARD CLASSES FOR SECTIONS
 // BIG-CARD
 .big-card {
-    background-image: url(../../assets/img/main/critics/testimonial2-2x.jpg);
+    background-image: url(../../assets/img/testimonial2-2x.jpg);
     background-position: center;
     background-size: cover;
     height: 100%;

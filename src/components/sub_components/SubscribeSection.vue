@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 #subscribe {
     min-height: 400px;
-    background-image: url(../../assets/img/main/newsletter/banner-2.jpg);
+    background-image: url(../../assets/img/banner-2.jpg);
 
     .wrapper {
         color: white;

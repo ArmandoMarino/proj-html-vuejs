@@ -23,7 +23,7 @@ export default {
         <!-- LATEST-BOOK -->
         <div class="latest-book ">
             <div class="t-latest-book">
-                <img src="../assets/img/header/book-widget.png" alt="book-widget">
+                <img src="../assets/img/book-widget.png" alt="book-widget">
                 <h4>Latest Book Release</h4>
                 <p>d. Vaughn autobiography</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 #hero {
-    background-image: url(../assets/img/header/hero-07-2x.jpg);
+    background-image: url(../assets/img/hero-07-2x.jpg);
     min-height: 500px;
 
     .daily {

@@ -16,7 +16,7 @@ export default {
 
 <template>
     <header class="d-flex justify-content-between">
-        <img class="img-fluid" src="../assets/img/header/author-logo-round.png" alt="logo">
+        <img class="img-fluid" src="../assets/img/author-logo-round.png" alt="logo">
         <nav-bar :lists="navlist"></nav-bar>
     </header>
 </template>

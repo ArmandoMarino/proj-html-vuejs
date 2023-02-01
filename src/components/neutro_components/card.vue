@@ -15,12 +15,12 @@ export default {
     computed: {
         // ICON-PATH GENERATOR
         iconPath() {
-            const path = `../../src/assets/img/main/critics/${this.image}`
+            const path = `../../src/assets/img/${this.image}`
             return path
         },
         // IMAGE THUMB PATH GENERATOR
         imagePath() {
-            const path = `../../src/assets/img/main/upcoming_events/${this.thumbPath}`
+            const path = `../../src/assets/img/${this.thumbPath}`
             return path
         },
 
