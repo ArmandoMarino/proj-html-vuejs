@@ -1,7 +1,5 @@
 <script>
 import { criticsArticles } from '../../data'
-import { eventsArticles } from '../../data'
-
 import card from '../base_pagination/card.vue';
 export default {
     name: 'critics',
@@ -11,41 +9,42 @@ export default {
     data() {
         return {
             criticsArticles,
-            eventsArticles
         }
     },
 }
 </script>
 
 <template>
-    <div class="say d-flex container">
-        <div>
-            <h1>What th Critics Say</h1>
-            <p>TESTIMONIALS FROM AROUND THE WORLD</p>
+    <section id="critics" class="container">
+        <div class="d-flex">
+            <div>
+                <h1>What th Critics Say</h1>
+                <p>TESTIMONIALS FROM AROUND THE WORLD</p>
+            </div>
+            <button>CIAO</button>
         </div>
-        <button>CIAO</button>
-    </div>
-    <!-- CARDS -->
-    <div class="container d-flex">
-        <div class="left d-flex justify-content-center align-items-center">
-            <card :class="'big-card'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
-                :image="criticsArticles[0].img" :alt="criticsArticles[0].title" :daily="criticsArticles[0].daily"
-                :author="criticsArticles[0].author">
-            </card>
-        </div>
-        <div class="right">
-            <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
-                :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
-                :daily="criticsArticles[1].daily" :author="criticsArticles[1].author"
-                :thumbPath="eventsArticles[0].img">
-            </card>
-            <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
-                :text="criticsArticles[2].text" :image="criticsArticles[2].img" :alt="criticsArticles[2].title"
-                :daily="criticsArticles[2].daily" :author="criticsArticles[2].author">
-            </card>
+        <!-- CARDS -->
+        <div class="d-flex">
+            <div class="left d-flex justify-content-center align-items-center">
+                <card :class="'big-card'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
+                    :image="criticsArticles[0].img" :alt="criticsArticles[0].title" :daily="criticsArticles[0].daily"
+                    :author="criticsArticles[0].author">
+                </card>
+            </div>
+            <div class="right">
+                <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
+                    :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
+                    :daily="criticsArticles[1].daily" :author="criticsArticles[1].author">
+                </card>
+                <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
+                    :text="criticsArticles[2].text" :image="criticsArticles[2].img" :alt="criticsArticles[2].title"
+                    :daily="criticsArticles[2].daily" :author="criticsArticles[2].author">
+                </card>
 
+            </div>
         </div>
-    </div>
+    </section>
+
 </template>
 
 <style lang="scss" scoped>

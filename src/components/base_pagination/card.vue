@@ -52,8 +52,8 @@ export default {
 <style lang="scss" scoped>
 .thumb {
     img {
-        width: 95%;
-
+        width: 100%;
+        display: inline-block;
     }
 }
 

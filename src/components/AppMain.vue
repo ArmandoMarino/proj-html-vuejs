@@ -3,13 +3,15 @@ import AppHero from './AppHero.vue';
 import about from './sub_components/about.vue';
 import audioBook from './sub_components/audioBook.vue';
 import critics from './sub_components/critics.vue';
+import EventsSection from './sub_components/EventsSection.vue';
 export default {
     name: 'AppMain',
     components: {
         AppHero,
         about,
         audioBook,
-        critics
+        critics,
+        EventsSection
     },
     data() {
         return {
@@ -29,6 +31,7 @@ export default {
         <about :title="this.about.title" :text="this.about.text"></about>
         <audio-book></audio-book>
         <critics></critics>
+        <events-section></events-section>
     </main>
 </template>
 
