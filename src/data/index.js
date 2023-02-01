@@ -15,21 +15,24 @@ const criticsArticles = [
         'title': 'Best Author of his Generation',
         'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi rerum a qui enim vero provident ipsam, voluptatem accusamus ut. Praesentium commodi optio quasi. Nam ab veniam amet harum, eaque odio aliquam voluptatibus distinctio iure mollitia minus libero eius cum sint laboriosam deleniti exercitationem officia, qui magnam assumenda corporis. Illum, uno!',
         'author': 'Justine Kilpatrick',
-        'daily': 'The New York Times'
+        'daily': 'The New York Times',
+        'img': 'nytimes-logo-white-xsmall.png'
     },
     {
         'id': '2',
         'title': 'a true masterpiece, bravo!',
         'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi rerum a qui enim vero provident ipsam, voluptatem accusamus ut. Praesentium commodi optio quasi. Nam ab veniam amet harum, eaque odio aliquam voluptatibus distinctio iure mollitia minus libero eius cum sint laboriosam deleniti exercitationem officia, qui magnam assumenda corporis. Illum, due!',
         'author': 'Gerald Hendley',
-        'daily': 'the guardian'
+        'daily': 'the guardian',
+        'img': 'theguardian-xsmall.png'
     },
     {
         'id': '3',
         'title': 'a unique view on the world',
         'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi rerum a qui enim vero provident ipsam, voluptatem accusamus ut. Praesentium commodi optio quasi. Nam ab veniam amet harum, eaque odio aliquam voluptatibus distinctio iure mollitia minus libero eius cum sint laboriosam deleniti exercitationem officia, qui magnam assumenda corporis. Illum, tre!',
         'author': 'Mark Maxey',
-        'daily': 'the globe and mail'
+        'daily': 'the globe and mail',
+        'img': 'globe-xsmall.png'
     }
 ]
 

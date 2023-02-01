@@ -10,12 +10,12 @@ export default {
         return {
             criticsArticles
         }
-    }
+    },
 }
 </script>
 
 <template>
-    <div class="say">
+    <div class="say d-flex container">
         <div>
             <h1>What th Critics Say</h1>
             <p>TESTIMONIALS FROM AROUND THE WORLD</p>
@@ -25,11 +25,18 @@ export default {
     <!-- CARDS -->
     <div class="container d-flex">
         <div class="left">
-            <card :title="criticsArticles[0].title" :text="criticsArticles[0].text"></card>
+            <card :title="criticsArticles[0].title" :text="criticsArticles[0].text" :image="criticsArticles[0].img"
+                :alt="criticsArticles[0].title" :daily="criticsArticles[0].daily">
+            </card>
         </div>
         <div class="right">
-            <card :title="criticsArticles[1].title" :text="criticsArticles[1].text"></card>
-            <card :title="criticsArticles[2].title" :text="criticsArticles[2].text"></card>
+            <card :title="criticsArticles[1].title" :text="criticsArticles[1].text" :image="criticsArticles[1].img"
+                :alt="criticsArticles[1].title" :daily="criticsArticles[1].daily">
+            </card>
+            <card :title="criticsArticles[2].title" :text="criticsArticles[2].text" :image="criticsArticles[2].img"
+                :alt="criticsArticles[2].title" :daily="criticsArticles[2].daily">
+            </card>
+
         </div>
     </div>
 </template>

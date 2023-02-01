@@ -9,7 +9,14 @@ export default {
         alt: String,
         daily: String,
         author: String
+    },
+    computed: {
+        imagePath() {
+            const path = `../../src/assets/img/main/critics/${this.image}`
+            return path
+        }
     }
+
 }
 </script>
 
@@ -20,7 +27,7 @@ export default {
         <hr>
         <p>{{ text }}</p>
         <div class="d-flex justify-content-center align-item-center">
-            <img :src="image" :alt="alt">
+            <img :src="imagePath" :alt="alt">
             <p>{{ author }},</p>
             <p :class="class">{{ daily }}</p>
         </div>
