@@ -58,4 +58,24 @@ const eventsArticles = [
 
 ]
 
-export { navlist, criticsArticles, eventsArticles }
+const moreArticles = [
+    {
+        'id': '1',
+        'title': 'about me',
+        'text': 'Lorem ipsum dolor sit amet.',
+        'img': 'box-1.jpg'
+    },
+    {
+        'id': '2',
+        'title': 'my latest book',
+        'text': 'Lorem ipsum dolor sit amet.',
+        'img': 'box-3.jpg'
+    }, {
+        'id': '3',
+        'title': 'book signing',
+        'text': 'Lorem ipsum dolor sit amet.',
+        'img': 'box-4.jpg'
+    }
+
+]
+export { navlist, criticsArticles, eventsArticles, moreArticles }

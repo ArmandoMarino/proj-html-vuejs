@@ -5,6 +5,7 @@ import audioBook from './sub_components/audioBook.vue';
 import critics from './sub_components/critics.vue';
 import EventsSection from './sub_components/EventsSection.vue';
 import SubscribeSection from './sub_components/SubscribeSection.vue';
+import MoreSection from './sub_components/MoreSection.vue';
 export default {
     name: 'AppMain',
     components: {
@@ -13,7 +14,8 @@ export default {
         audioBook,
         critics,
         EventsSection,
-        SubscribeSection
+        SubscribeSection,
+        MoreSection
     },
     data() {
         return {
@@ -35,6 +37,7 @@ export default {
         <critics></critics>
         <events-section></events-section>
         <subscribe-section></subscribe-section>
+        <more-section></more-section>
     </main>
 </template>
 
