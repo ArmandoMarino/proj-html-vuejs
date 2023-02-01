@@ -58,7 +58,6 @@ export default {
     background-size: cover;
     height: 100%;
     width: 80%;
-    border: 1px solid transparent;
     border-bottom-right-radius: 100px;
     color: white;
     display: flex;

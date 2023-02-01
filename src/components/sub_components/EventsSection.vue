@@ -24,12 +24,12 @@ export default {
                 </div>
             </div>
             <!-- CARDS -->
+
             <div class="d-flex">
-                <div class="d-flex">
-                    <card v-for="eventsArticle in eventsArticles" :class="'thumb-card'" :title="eventsArticle.title"
-                        :thumbPath="eventsArticle.img" :text="eventsArticle.text"></card>
-                </div>
+                <card v-for="eventsArticle in eventsArticles" :class="'thumb-card'" :title="eventsArticle.title"
+                    :thumbPath="eventsArticle.img" :text="eventsArticle.text"></card>
             </div>
+
         </div>
 
 

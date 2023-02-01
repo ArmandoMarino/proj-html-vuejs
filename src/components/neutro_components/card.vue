@@ -1,16 +1,18 @@
 <script>
 export default {
     name: 'card',
+
     props: {
         title: String,
         class: String,
+        class2: String,
+        class3: String,
         text: String,
         image: String,
         thumbPath: String,
         alt: String,
         daily: String,
         author: String,
-        class2: String
     },
     computed: {
         // ICON-PATH GENERATOR
@@ -34,12 +36,10 @@ export default {
 <template>
     <div :class="class" class="my-card">
         <!-- IF thumbPath exist RENDER THUMBIMAGE -->
-        <div class="thumb" v-if="thumbPath"><img :src="imagePath" :alt="alt"></div>
+        <div class="thumb" v-if="thumbPath"><img :class="class3" :src="imagePath" :alt="alt"></div>
         <h2>{{ title }}</h2>
-        <span>
-            <hr>
-        </span>
-        <p>{{ text }}</p>
+        <hr>
+        <p v-if="text">{{ text }}</p>
         <!-- IF author exist RENDER ENTIRE DIV WITH AUTHOR AND DAILY -->
         <div v-if="author" class="b-author d-flex align-item-center" :class="class2">
             <img class="img-fluid" :src="iconPath" :alt="alt">
