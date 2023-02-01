@@ -24,17 +24,20 @@ export default {
     </div>
     <!-- CARDS -->
     <div class="container d-flex">
-        <div class="left">
-            <card :title="criticsArticles[0].title" :text="criticsArticles[0].text" :image="criticsArticles[0].img"
-                :alt="criticsArticles[0].title" :daily="criticsArticles[0].daily">
+        <div class="left d-flex justify-content-center align-items-center">
+            <card :class="'big-card'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
+                :image="criticsArticles[0].img" :alt="criticsArticles[0].title" :daily="criticsArticles[0].daily"
+                :author="criticsArticles[0].author">
             </card>
         </div>
         <div class="right">
-            <card :title="criticsArticles[1].title" :text="criticsArticles[1].text" :image="criticsArticles[1].img"
-                :alt="criticsArticles[1].title" :daily="criticsArticles[1].daily">
+            <card :class="'small-card'" :title="criticsArticles[1].title" :text="criticsArticles[1].text"
+                :image="criticsArticles[1].img" :alt="criticsArticles[1].title" :daily="criticsArticles[1].daily"
+                :author="criticsArticles[1].author">
             </card>
-            <card :title="criticsArticles[2].title" :text="criticsArticles[2].text" :image="criticsArticles[2].img"
-                :alt="criticsArticles[2].title" :daily="criticsArticles[2].daily">
+            <card :class="'small-card'" :title="criticsArticles[2].title" :text="criticsArticles[2].text"
+                :image="criticsArticles[2].img" :alt="criticsArticles[2].title" :daily="criticsArticles[2].daily"
+                :author="criticsArticles[2].author">
             </card>
 
         </div>
@@ -42,6 +45,32 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
+// CUSTOM CARD CLASSES FOR SECTIONS
+// BIG-CARD
+.big-card {
+    background-image: url(../../assets/img/main/critics/testimonial2-2x.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    border: 1px solid transparent;
+    border-bottom-right-radius: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+
+.small-card {
+    background-color: $pm-cream;
+}
+
+
+
+// GENERICS
 .left {
     flex-basis: 60%;
 }
