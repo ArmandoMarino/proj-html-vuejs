@@ -1,5 +1,7 @@
 <script>
 import { criticsArticles } from '../../data'
+import { eventsArticles } from '../../data'
+
 import card from '../base_pagination/card.vue';
 export default {
     name: 'critics',
@@ -8,7 +10,8 @@ export default {
     },
     data() {
         return {
-            criticsArticles
+            criticsArticles,
+            eventsArticles
         }
     },
 }
@@ -33,7 +36,8 @@ export default {
         <div class="right">
             <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
                 :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
-                :daily="criticsArticles[1].daily" :author="criticsArticles[1].author">
+                :daily="criticsArticles[1].daily" :author="criticsArticles[1].author"
+                :thumbPath="eventsArticles[0].img">
             </card>
             <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
                 :text="criticsArticles[2].text" :image="criticsArticles[2].img" :alt="criticsArticles[2].title"

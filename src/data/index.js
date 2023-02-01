@@ -41,16 +41,21 @@ const eventsArticles = [
         'id': '1',
         'title': 'chicago book signing',
         'text': 'Lorem ipsum dolor sit amet, voluptatibus distinctio iure mollitia minus libero eius cum sint laboriosam deleniti exercitationem officia, qui magnam assumenda corporis. Illum, uno!',
+        'img': 'event-05.jpg'
     },
     {
         'id': '2',
         'title': 'meet & greet with amanda',
         'text': 'Lorem ipsum dolor sit amet, voluptatibus distinctio iure mollitia minus libero eius cum sint laboriosam deleniti exercitationem officia, qui magnam assumenda corporis. Illum, uno!',
+        'img': 'event-04.jpg'
+
     }, {
         'id': '3',
         'title': 'open book: dialogues',
         'text': 'Lorem ipsum dolor sit amet, voluptatibus distinctio iure mollitia minus libero eius cum sint laboriosam deleniti exercitationem officia, qui magnam assumenda corporis. Illum, uno!',
+        'img': 'event-07.jpg'
     }
+
 ]
 
 export { navlist, criticsArticles, eventsArticles }
