@@ -1,6 +1,16 @@
 <script>
+import { criticsArticles } from '../../data'
+import card from '../base_pagination/card.vue';
 export default {
-    name: 'critics'
+    name: 'critics',
+    components: {
+        card
+    },
+    data() {
+        return {
+            criticsArticles
+        }
+    }
 }
 </script>
 
@@ -15,10 +25,11 @@ export default {
     <!-- CARDS -->
     <div class="container d-flex">
         <div class="left">
-
+            <card :title="criticsArticles[0].title" :text="criticsArticles[0].text"></card>
         </div>
         <div class="right">
-
+            <card :title="criticsArticles[1].title" :text="criticsArticles[1].text"></card>
+            <card :title="criticsArticles[2].title" :text="criticsArticles[2].text"></card>
         </div>
     </div>
 </template>

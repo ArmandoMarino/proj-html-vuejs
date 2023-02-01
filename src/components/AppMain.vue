@@ -2,12 +2,14 @@
 import AppHero from './AppHero.vue';
 import about from './sub_components/about.vue';
 import audioBook from './sub_components/audioBook.vue';
+import critics from './sub_components/critics.vue';
 export default {
     name: 'AppMain',
     components: {
         AppHero,
         about,
-        audioBook
+        audioBook,
+        critics
     },
     data() {
         return {
@@ -26,6 +28,7 @@ export default {
         <app-hero></app-hero>
         <about :title="this.about.title" :text="this.about.text"></about>
         <audio-book></audio-book>
+        <critics></critics>
     </main>
 </template>
 

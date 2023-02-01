@@ -15,7 +15,7 @@ export default {
 
 
 <template>
-    <div :class="class" class="card p-2">
+    <div :class="class" class="my-card p-2">
         <h2>{{ title }}</h2>
         <hr>
         <p>{{ text }}</p>
@@ -28,5 +28,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.my-card {
+    h2 {
+        text-transform: capitalize;
+    }
+}
 </style>
