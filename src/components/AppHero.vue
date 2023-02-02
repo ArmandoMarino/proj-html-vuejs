@@ -22,7 +22,7 @@ export default {
                     <p>-The New York Times</p>
                 </div>
                 <!-- BOOK SECTION ON THE RIGHT -->
-                <div class="col-4 d-none d-lg-block">
+                <div class="d-none col-3 d-lg-block">
                     <div class="latest-book ">
                         <div class="t-latest-book d-flex">
                             <!-- LEFT -->
