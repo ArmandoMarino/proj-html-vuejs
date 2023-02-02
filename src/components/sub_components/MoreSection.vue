@@ -17,9 +17,9 @@ export default {
 </script>
 
 <template>
-    <section id="more">
+    <section id="more" class="p-5">
         <div class="container">
-            <div class="d-flex">
+            <div class="title text-center">
                 <div>
                     <h1>dig a little deeper into damon vaughn</h1>
                     <p>FIND OUT MORE ABOUT THE AUTHOR HIMSELF</p>
@@ -37,8 +37,24 @@ export default {
     </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" >
+@use '../../assets/scss/partials/variables' as*;
+
 #more {
+    font-family: 'Newsreader', serif;
+
+    .title {
+        h1 {
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+
+        p {
+            font-weight: 600;
+            color: $pm-yellow;
+        }
+    }
 
     .my-card {
         width: 30%;
@@ -48,6 +64,21 @@ export default {
         align-items: center;
         justify-content: end;
         border-bottom-right-radius: 50px;
+        // TODO
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 1, 1, 0.5270483193277311) 46%, rgba(0, 0, 0, 1) 100%);
+
+        h2 {
+            font-weight: 600;
+            text-transform: capitalize;
+            font-size: 25px;
+            color: white;
+        }
+
+        p {
+            font-weight: 600;
+            color: $pm-yellow;
+        }
 
         hr {
             height: 0;

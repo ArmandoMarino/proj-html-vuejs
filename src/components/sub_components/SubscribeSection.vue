@@ -20,13 +20,30 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as*;
+
 #subscribe {
     min-height: 400px;
     background-image: url(../../assets/img/banner-2.jpg);
+    font-family: 'Newsreader', serif;
+
+    .wrapper>* {
+        padding: 5px;
+    }
 
     .wrapper {
         color: white;
-        width: 50%;
+        width: 35%;
+
+        h2 {
+            font-weight: 600;
+        }
+
+        p {
+            font-weight: 600;
+            color: $pm-yellow;
+        }
     }
+
 }
 </style>

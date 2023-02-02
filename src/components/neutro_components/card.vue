@@ -50,6 +50,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 .my-card>* {
     padding: 5px;
 }

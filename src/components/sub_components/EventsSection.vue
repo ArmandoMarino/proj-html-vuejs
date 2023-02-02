@@ -15,16 +15,16 @@ export default {
 </script>
 
 <template>
-    <section id="events">
+    <section id="events" class="p-5">
         <div class="container">
-            <div class="d-flex">
+            <!-- TITLE -->
+            <div class="title text-center">
                 <div>
                     <h1>Upcoming Events</h1>
                     <p>MEET THE AUTHOR IN PERSON</p>
                 </div>
             </div>
             <!-- CARDS -->
-
             <div class="d-flex">
                 <card v-for="eventsArticle in eventsArticles" :class="'thumb-card'" :title="eventsArticle.title"
                     :thumbPath="eventsArticle.img" :text="eventsArticle.text"></card>
@@ -42,6 +42,19 @@ export default {
 
 #events {
     background-color: $pm-cream;
+    font-family: 'Newsreader', serif;
+
+    .title {
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        p {
+            color: $pm-yellow;
+            font-weight: 600;
+        }
+    }
 }
 
 .thumb-card {
