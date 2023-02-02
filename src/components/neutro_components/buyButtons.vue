@@ -4,8 +4,8 @@ export default {
     props: {
         placeHolderLeft: String,
         placeHolderRight: String,
-        imageAgencyLeft: String,
-        imageAgencyRight: String
+        iconAgencyLeft: String,
+        iconAgencyRight: String
     }
 }
 </script>
@@ -14,14 +14,15 @@ export default {
 <template>
     <!-- BUTTON LEFT -->
     <div class="buy-btn">
-        <button class="buy-btn-l" name="buy-button" type="submit">
-            <span>{{ imageAgencyLeft }}</span>
+        <a href="">
+            <i :class="iconAgencyLeft" class="fa-brands"></i>
             {{ placeHolderLeft }}
-        </button>
-        <!-- BUTTON RIGHT -->
-        <button class="buy-btn-r" name="buy-button" type="submit">
+        </a>
+        <span>|</span>
+        <a href="">
+            <i :class="iconAgencyRight" class="fa-brands"></i>
             {{ placeHolderRight }}
-        </button>
+        </a>
     </div>
 
 </template>
@@ -38,6 +39,7 @@ export default {
     border-radius: 5px;
     font-size: 15px;
     padding: 5px;
+    color: black;
 }
 
 .buy-btn {

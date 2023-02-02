@@ -37,7 +37,7 @@ export default {
             </div>
             <div class="d-flex justify-content-center">
                 <buy-buttons :placeHolderLeft="'Buy on Amazon'" :placeHolderRight="'Buy on Apple Store'"
-                    :imageAgencyLeft="`\e90a`"></buy-buttons>
+                    :iconAgencyLeft="'fa-amazon'" :iconAgencyRight="'fa-apple'"></buy-buttons>
             </div>
 
         </div>
