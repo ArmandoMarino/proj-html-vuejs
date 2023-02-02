@@ -19,4 +19,8 @@ a {
     font-size: 12px;
     font-weight: 500;
 }
+
+.btn:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+}
 </style>
