@@ -29,7 +29,7 @@ export default {
     <div id="audio-book" class="pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-6 d-none d-lg-block ">
+                <div class="d-none d-lg-block col-lg-4 offset-1">
                     <!-- LEFT -->
                     <img class="img-fluid" src="../../assets/img/audible-app-2x.png" alt="audible">
                 </div>
@@ -80,6 +80,7 @@ export default {
     }
 
     .b-audio-book {
+
         img {
             padding: 10px;
         }
