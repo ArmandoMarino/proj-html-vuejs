@@ -30,6 +30,7 @@ header {
     left: 0;
     background-size: cover;
     background-color: transparent;
+    z-index: 1;
 
     img {
         height: 150px;
