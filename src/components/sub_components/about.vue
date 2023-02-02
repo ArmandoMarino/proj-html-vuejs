@@ -14,7 +14,7 @@ export default {
 
 <template>
     <div id="about" class="text-center">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <h1>{{ title }}</h1>

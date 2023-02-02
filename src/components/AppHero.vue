@@ -13,7 +13,7 @@ export default {
         <div class="container">
             <div class="row">
                 <!-- TITLE LEFT -->
-                <div class="col-6 daily">
+                <div class="col-6 col-lg-6 daily">
                     <h1>Damon Vaughn</h1>
                     <h3>Best-selling author and the most
                         influential public intellectual in the
@@ -22,7 +22,7 @@ export default {
                     <p>-The New York Times</p>
                 </div>
                 <!-- BOOK SECTION ON THE RIGHT -->
-                <div class="col-4">
+                <div class="col-4 d-none d-lg-block">
                     <div class="latest-book ">
                         <div class="t-latest-book d-flex">
                             <!-- LEFT -->

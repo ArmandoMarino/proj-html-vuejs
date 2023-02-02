@@ -16,12 +16,12 @@ export default {
 
 <template>
     <header>
-        <div class="">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-3">
+                <div class="col-2 offset-1">
                     <img class="img-fluid" src="../assets/img/author-logo-round.png" alt="logo">
                 </div>
-                <div class="col-8">
+                <div class="col-9">
                     <nav-bar :lists="navlist"></nav-bar>
                 </div>
             </div>
