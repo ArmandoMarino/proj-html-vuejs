@@ -16,13 +16,17 @@ export default {
 
 <template>
     <section id="critics" class="container">
-        <div class="d-flex">
+        <!-- TITLE -->
+        <div class="title d-flex justify-content-between">
             <div>
-                <h1>What th Critics Say</h1>
+                <h2>What the Critics Say</h2>
                 <p>TESTIMONIALS FROM AROUND THE WORLD</p>
             </div>
-            <button>CIAO</button>
+            <div class="d-flex justify-content-center align-items-center">
+                <button>CIAO</button>
+            </div>
         </div>
+
         <!-- CARDS -->
         <div class="d-flex">
             <div class="left d-flex justify-content-center align-items-center">
@@ -50,41 +54,71 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/variables' as *;
 
+#critics {
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+
+    .title {
+        font-family: 'Newsreader', serif;
+        margin-left: 75px;
+        margin-right: 75px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        p {
+            font-weight: 600;
+            color: $pm-green;
+        }
+    }
+
+    .big-card {
+        font-family: 'Newsreader', serif;
+        background-image: url(../../assets/img/testimonial2-2x.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 80%;
+        border-bottom-right-radius: 100px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px;
+        line-height: 30px;
+
+    }
+
+    // SMALL-CARD
+    .small-card {
+        font-family: 'Newsreader', serif;
+
+        background-color: $pm-cream;
+        margin: 0 auto;
+
+        width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    // GENERICS
+    .left {
+        flex-basis: 60%;
+    }
+
+    .right {
+        flex-basis: 40%;
+    }
+}
+
+
+
+
 // CUSTOM CARD CLASSES FOR SECTIONS
 // BIG-CARD
-.big-card {
-    background-image: url(../../assets/img/testimonial2-2x.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 80%;
-    border-bottom-right-radius: 100px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px;
-    line-height: 30px;
-}
-
-// SMALL-CARD
-.small-card {
-    background-color: $pm-cream;
-    margin: 0 auto;
-
-    width: 80%;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 20px;
-}
-
-
-// GENERICS
-.left {
-    flex-basis: 60%;
-}
-
-.right {
-    flex-basis: 40%;
-}
 </style>

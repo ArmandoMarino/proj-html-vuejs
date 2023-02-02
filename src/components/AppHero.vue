@@ -51,7 +51,7 @@ export default {
     background-image: url(../assets/img/hero-07-2x.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 500px;
+    min-height: 600px;
     padding-top: 150px;
     position: relative;
 

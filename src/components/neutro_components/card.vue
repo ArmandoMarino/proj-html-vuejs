@@ -65,8 +65,10 @@ export default {
 
     p {
         margin: 0;
+        padding: 2px;
         text-align: center;
         line-height: 40px;
+        text-transform: capitalize;
     }
 
     img {
@@ -78,6 +80,7 @@ export default {
 h2 {
     text-transform: capitalize;
     font-size: 1.3rem;
+    font-weight: 600;
 }
 
 hr {
