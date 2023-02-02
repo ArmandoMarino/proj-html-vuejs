@@ -12,7 +12,7 @@ export default {
     <div id="subscribe" class="d-flex justify-content-center align-items-center">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4 offset-4">
+                <div class="col-12">
                     <div class="title text-center">
                         <h2>Subscribe to my Newsletter</h2>
                         <p>BE NOTIFIED ABOUT BOOK SIGNING YOUR DATES</p>
