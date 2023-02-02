@@ -45,5 +45,7 @@ export default {
 </template>
 
 <style>
-
+main {
+    position: relative;
+}
 </style>

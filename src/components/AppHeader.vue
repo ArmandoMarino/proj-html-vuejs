@@ -15,9 +15,18 @@ export default {
 </script>
 
 <template>
-    <header class="d-flex justify-content-between container">
-        <img class="img-fluid" src="../assets/img/author-logo-round.png" alt="logo">
-        <nav-bar :lists="navlist"></nav-bar>
+    <header class="d-flex justify-content-between">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid" src="../assets/img/author-logo-round.png" alt="logo">
+                </div>
+                <div class="col-9">
+                    <nav-bar :lists="navlist"></nav-bar>
+                </div>
+            </div>
+        </div>
+
     </header>
 </template>
 
@@ -28,7 +37,6 @@ header {
     right: 0;
     top: 0;
     left: 0;
-    bottom: 0;
     background-size: cover;
     background-color: transparent;
     z-index: 1;

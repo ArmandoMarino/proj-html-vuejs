@@ -11,7 +11,7 @@ export default {
 
 <template>
     <nav>
-        <ul>
+        <ul class="d-flex justify-content-between">
             <li v-for="list in lists"><a href="">{{ list }}</a></li>
         </ul>
     </nav>
@@ -21,7 +21,6 @@ export default {
 @use '../../assets/scss/partials/variables' as*;
 
 nav {
-    height: 20%;
 
     ul {
         list-style-type: none;
@@ -29,7 +28,6 @@ nav {
 
 
         li {
-            height: 50%;
             padding: 5px;
             text-transform: capitalize;
             font-weight: 600;
@@ -37,7 +35,7 @@ nav {
 
             a {
                 text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
-                padding: 20px;
+                padding: 5px;
             }
 
             li:hover {
