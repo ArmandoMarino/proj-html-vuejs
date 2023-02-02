@@ -28,9 +28,16 @@ nav {
 
         li {
             height: 50%;
-            padding: 20px;
+            margin-top: 5px;
+            padding: 5px;
             text-transform: capitalize;
             font-weight: 600;
+
+            a {
+                text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+                padding: 20px;
+
+            }
         }
     }
 }

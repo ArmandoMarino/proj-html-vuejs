@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <header class="d-flex justify-content-between">
+    <header class="d-flex justify-content-between container">
         <img class="img-fluid" src="../assets/img/author-logo-round.png" alt="logo">
         <nav-bar :lists="navlist"></nav-bar>
     </header>

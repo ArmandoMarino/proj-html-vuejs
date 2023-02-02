@@ -43,6 +43,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
 #hero {
     background-image: url(../assets/img/hero-07-2x.jpg);
     background-position: center;
@@ -54,6 +56,24 @@ export default {
     .daily {
         width: 500px;
         margin-left: 150px;
+        text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+
+        h1 {
+            font-family: 'Cedarville Cursive', cursive;
+            color: $pm-yellow;
+            font-size: 60px;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: $pm-gray;
+            font-style: italic;
+            font-size: 20px;
+        }
     }
 
     .latest-book {

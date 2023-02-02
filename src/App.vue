@@ -14,9 +14,15 @@ export default {
   <app-main></app-main>
 </template>
 
-<style>
+<style lang="scss">
+@use './assets/scss/partials/variables' as *;
+
 a {
   text-decoration: none;
   color: white;
+
+  a:hover {
+    color: $pm-yellow;
+  }
 }
 </style>
