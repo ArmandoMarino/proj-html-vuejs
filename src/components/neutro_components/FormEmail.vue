@@ -15,7 +15,7 @@ export default {
 @use '../../assets/scss/partials/variables' as *;
 
 .my-subscribe {
-    padding: 5px 10px;
+    padding: 2px 10px;
     background-color: $pm-green;
 }
 </style>
