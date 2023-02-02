@@ -1,10 +1,12 @@
 <script>
 import { recentArticles } from '../../data'
 import card from '../neutro_components/card.vue';
+import NeutroButton from '../neutro_components/NeutroButton.vue';
 export default {
     name: 'recentSection',
     components: {
-        card
+        card,
+        NeutroButton
     },
     data() {
         return {
@@ -15,14 +17,16 @@ export default {
 </script>
 
 <template>
-    <section id="recent">
+    <section id="recent" class="p-5">
         <div class="container">
-            <div class="d-flex">
+            <div class="title d-flex justify-content-between">
                 <div>
-                    <h1>What th Critics Say</h1>
-                    <p>TESTIMONIALS FROM AROUND THE WORLD</p>
+                    <h2>Recent Articles</h2>
+                    <p>READ THE LAST ENTRIES</p>
                 </div>
-                <button>CIAO</button>
+                <div class="d-flex justify-content-center align-items-center">
+                    <neutro-button class="button" label="All Articles"></neutro-button>
+                </div>
             </div>
             <!-- CARDS -->
             <div class="d-flex">
@@ -50,10 +54,28 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/variables' as *;
 
+.button {
+    background-color: $pm-yellow;
+    padding: 5px 40px;
+}
+
 // CUSTOM CARD CLASSES FOR SECTIONS
 // BIG-CARD
 #recent {
     background-color: $pm-cream;
+    font-family: 'Newsreader', serif;
+
+    .title {
+        h2 {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        p {
+            font-weight: 600;
+            color: $pm-green;
+        }
+    }
 
     .big-card {
         height: 95%;

@@ -1,9 +1,13 @@
 <script>
+import NeutroButton from '../neutro_components/NeutroButton.vue';
 export default {
     name: 'about',
     props: {
         title: String,
-        text: String
+        text: String,
+    },
+    components: {
+        NeutroButton
     }
 }
 </script>
@@ -12,12 +16,16 @@ export default {
     <div id="about" class="text-center container">
         <h1>{{ title }}</h1>
         <h3>{{ text }}</h3>
-        <button>Fare component neutro bottone</button>
+        <neutro-button class="button" label="Meet the Author"></neutro-button>
     </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/variables' as*;
+
+.button {
+    background-color: $pm-green;
+}
 
 #about {
     margin: 50px;

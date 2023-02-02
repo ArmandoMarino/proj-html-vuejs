@@ -1,10 +1,12 @@
 <script>
 import { criticsArticles } from '../../data'
 import card from '../neutro_components/card.vue';
+import NeutroButton from '../neutro_components/NeutroButton.vue';
 export default {
     name: 'critics',
     components: {
-        card
+        card,
+        NeutroButton
     },
     data() {
         return {
@@ -23,7 +25,7 @@ export default {
                 <p>TESTIMONIALS FROM AROUND THE WORLD</p>
             </div>
             <div class="d-flex justify-content-center align-items-center">
-                <button>CIAO</button>
+                <neutro-button class="button" label="Read All Testimonials"></neutro-button>
             </div>
         </div>
 
@@ -53,6 +55,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/variables' as *;
+
+.button {
+    background-color: $pm-yellow;
+}
 
 #critics {
     margin-top: 70px;
