@@ -19,7 +19,7 @@ export default {
 <template>
     <section id="recent" class="p-5">
         <div class="container-fluid">
-            <div class="row justify-content-between">
+            <div class="row">
                 <!-- TITLE -->
                 <div class="col-12">
                     <div class="title d-flex justify-content-between">
@@ -33,13 +33,13 @@ export default {
                     </div>
                 </div>
                 <!-- CARDS -->
-                <div class="col-7">
-                    <div class="big-card">
+                <div class="col-12 col-md-7">
+                    <div class="big-card mb-sm-3">
                         <card :class="'thumb-card'" :title="recentArticles[0].title" :thumbPath="recentArticles[0].img"
                             :text="recentArticles[0].text"></card>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-12 col-md-4">
                     <card :class="'thumb-card small-card'" :title="recentArticles[1].title"
                         :thumbPath="recentArticles[1].img" :text="recentArticles[1].text"></card>
                     <card :class="'thumb-card small-card'" :title="recentArticles[2].title"
@@ -88,8 +88,8 @@ export default {
     .small-card {
         background-color: white;
         height: 45%;
-        width: 63%;
-        margin: 0 auto;
+        // width: 63%;
+        // margin: 0 auto;
         margin-bottom: 20px;
         text-align: center;
         padding: 20px;
