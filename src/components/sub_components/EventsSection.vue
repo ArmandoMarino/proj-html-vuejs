@@ -16,18 +16,27 @@ export default {
 
 <template>
     <section id="events" class="p-5">
-        <div class="container">
-            <!-- TITLE -->
-            <div class="title text-center">
-                <div>
-                    <h1>Upcoming Events</h1>
-                    <p>MEET THE AUTHOR IN PERSON</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- TITLE -->
+                    <div class="title text-center">
+                        <div>
+                            <h1>Upcoming Events</h1>
+                            <p>MEET THE AUTHOR IN PERSON</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARDS -->
+                <div v-for="eventsArticle in eventsArticles" class="col-12 col-md-6 col-lg-4 d-flex">
+                    <card :class="'thumb-card'" :title="eventsArticle.title" :thumbPath="eventsArticle.img"
+                        :text="eventsArticle.text"></card>
                 </div>
             </div>
-            <!-- CARDS -->
+
+
             <div class="d-flex">
-                <card v-for="eventsArticle in eventsArticles" :class="'thumb-card'" :title="eventsArticle.title"
-                    :thumbPath="eventsArticle.img" :text="eventsArticle.text"></card>
+
             </div>
 
         </div>
