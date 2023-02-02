@@ -48,19 +48,14 @@ export default {
                 </div>
                 <!-- SMALL-CARD -->
                 <div class="col-5">
-                    <div class="right">
-                        <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
-                            :text="criticsArticles[1].text" :image="criticsArticles[1].img"
-                            :alt="criticsArticles[1].title" :daily="criticsArticles[1].daily"
-                            :author="criticsArticles[1].author">
-                        </card>
-                        <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
-                            :text="criticsArticles[2].text" :image="criticsArticles[2].img"
-                            :alt="criticsArticles[2].title" :daily="criticsArticles[2].daily"
-                            :author="criticsArticles[2].author">
-                        </card>
-
-                    </div>
+                    <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
+                        :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
+                        :daily="criticsArticles[1].daily" :author="criticsArticles[1].author">
+                    </card>
+                    <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
+                        :text="criticsArticles[2].text" :image="criticsArticles[2].img" :alt="criticsArticles[2].title"
+                        :daily="criticsArticles[2].daily" :author="criticsArticles[2].author">
+                    </card>
                 </div>
             </div>
         </div>
@@ -115,24 +110,11 @@ export default {
     // SMALL-CARD
     .small-card {
         font-family: 'Newsreader', serif;
-
         background-color: $pm-cream;
-        // margin: 0 auto;
-
-        // width: 80%;
         margin-bottom: 20px;
         text-align: center;
         padding: 20px;
     }
 
-
-    // GENERICS
-
 }
-
-
-
-
-// CUSTOM CARD CLASSES FOR SECTIONS
-// BIG-CARD
 </style>
