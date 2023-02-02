@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <section id="more" class="p-5">
+    <section id="more" class="m-3">
         <div class="container-fluid">
             <div class="row">
                 <!-- TITLE -->
@@ -30,7 +30,7 @@ export default {
                     </div>
                 </div>
                 <!-- CARDS -->
-                <div v-for="moreArticle in moreArticles" class="col-4">
+                <div v-for="moreArticle in moreArticles" class="col-12 col-md-4 mt-3 ">
                     <card :title="moreArticle.title" :text="moreArticle.text"
                         :style="{ backgroundImage: 'url(' + this.urlBackground + moreArticle.img + ')' }"></card>
                 </div>
