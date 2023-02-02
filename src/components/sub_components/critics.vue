@@ -40,14 +40,14 @@ export default {
         <div class="container-fluid">
             <div class="row">
                 <!-- BIG-CARD -->
-                <div class="col-7">
-                    <card :class="'big-card'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
+                <div class="col-12 col-md-7">
+                    <card :class="'big-card p-3'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
                         :image="criticsArticles[0].img" :alt="criticsArticles[0].title"
                         :daily="criticsArticles[0].daily" :author="criticsArticles[0].author">
                     </card>
                 </div>
                 <!-- SMALL-CARD -->
-                <div class="col-5">
+                <div class="col-12 col-md-5 mt-sm-4">
                     <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
                         :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
                         :daily="criticsArticles[1].daily" :author="criticsArticles[1].author">
