@@ -6,7 +6,7 @@ export default {
 
 <template>
     <!-- AGENCYS -->
-    <div id="agencys" class="d-flex container justify-content-center align-items-center p-5">
+    <div id="agencys" class="d-flex justify-content-center align-items-center p-3">
         <img class="img-fluid" src="../../assets/img/ebay-logotan-2x.png" alt="ebay">
         <img class="img-fluid" src="../../assets/img/audible-logotan-2x.png" alt="audible">
         <img class="img-fluid" src="../../assets/img/bb-logotan-2x.png" alt="barnes&noble">
@@ -14,16 +14,20 @@ export default {
     </div>
 
     <!-- AUDIO-BOOK -->
-    <div id="audio-book" class="">
+    <div id="audio-book" class="pt-5">
         <div class="container d-flex justify-content-center">
+            <!-- LEFT -->
             <img class="app" src="../../assets/img/audible-app-2x.png" alt="audible">
-            <div class="r-audio-book">
-                <h3>New Audiobook</h3>
-                <h5>NO TIME TO READ? NO PROBLEM. LISTEN TO IT</h5>
+
+            <!-- RIGHT -->
+            <div class="r-audio-book d-flex justify-content-center flex-column text-center">
+                <h2>New Audiobook</h2>
+                <h6>NO TIME TO READ? NO PROBLEM. LISTEN TO IT</h6>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Obcaecati amet esse consequuntur, ab voluptate est officiis.
+                    Obcaecati amet esse consequuntur.
                 </p>
-                <div class="b-audio-book">
+                <!-- SUB-BOTTOM -->
+                <div class="b-audio-book d-flex justify-content-center">
                     <img class="img-fluid" src="../../assets/img/audible-logo.png" alt="audible">
                     <img class="img-fluid" src="../../assets/img/bn-logo-tall.png" alt="bn">
                     <img class="img-fluid" src="../../assets/img/kindle-logo-tall.png" alt="kindle">
@@ -38,6 +42,7 @@ export default {
 
 
 #agencys {
+    background-color: $pm-cream;
 
     img {
         width: 20%;
@@ -45,12 +50,28 @@ export default {
     }
 }
 
-.app {
-    width: 30%;
-}
+#audio-book {
+    color: white;
+    background-image: url(../../assets/img/banner.jpg);
 
+    .r-audio-book {
+        flex-basis: 30%;
 
-.r-audio-book {
-    flex-basis: 30%;
+        h6 {
+            color: $pm-yellow;
+            font-size: 14px;
+        }
+    }
+
+    .b-audio-book {
+        img {
+            padding: 10px;
+            height: 90%;
+        }
+    }
+
+    .app {
+        width: 30%;
+    }
 }
 </style>

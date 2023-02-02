@@ -6,7 +6,6 @@ const navlist = [
     'meetups',
     'shop',
     'contact me',
-    'icon'
 ]
 
 const criticsArticles = [
