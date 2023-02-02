@@ -21,7 +21,9 @@ export default {
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav justify-content-between">
                     <li v-for="list in lists" class="nav-item">
-                        <a tabindex="0" class="nav-link active selected" aria-current="page" href="#">{{ list }}</a>
+                        <a tabindex="0" class="nav-link active selected text-light" aria-current="page" href="#">{{
+                            list
+                        }}</a>
                     </li>
                 </ul>
             </div>
@@ -50,8 +52,17 @@ ul {
             text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
             padding: 5px;
         }
+
+        a:hover {
+            color: $pm-yellow;
+        }
     }
 
+
+}
+
+.navbar-nav {
+    color: white;
 
 }
 
