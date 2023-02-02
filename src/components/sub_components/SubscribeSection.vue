@@ -10,12 +10,20 @@ export default {
 
 <template>
     <div id="subscribe" class="d-flex justify-content-center align-items-center">
-        <div class="wrapper text-center">
-            <h2>Subscribe to my Newsletter</h2>
-            <p>BE NOTIFIED ABOUT BOOK SIGNING YOUR DATES</p>
-            <form-email></form-email>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, recusandae.</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 offset-4">
+                    <div class="title text-center">
+                        <h2>Subscribe to my Newsletter</h2>
+                        <p>BE NOTIFIED ABOUT BOOK SIGNING YOUR DATES</p>
+                        <form-email></form-email>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, recusandae.</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </div>
 </template>
 
@@ -27,13 +35,12 @@ export default {
     background-image: url(../../assets/img/banner-2.jpg);
     font-family: 'Newsreader', serif;
 
-    .wrapper>* {
+    .title>* {
         padding: 5px;
     }
 
-    .wrapper {
+    .title {
         color: white;
-        width: 35%;
 
         h2 {
             font-weight: 600;

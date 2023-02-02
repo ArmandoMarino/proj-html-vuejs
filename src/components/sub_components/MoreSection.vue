@@ -18,19 +18,23 @@ export default {
 
 <template>
     <section id="more" class="p-5">
-        <div class="container">
-            <div class="title text-center">
-                <div>
-                    <h1>dig a little deeper into damon vaughn</h1>
-                    <p>FIND OUT MORE ABOUT THE AUTHOR HIMSELF</p>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- TITLE -->
+                <div class="col-12">
+                    <div class="title text-center">
+                        <div>
+                            <h1>dig a little deeper into damon vaughn</h1>
+                            <p>FIND OUT MORE ABOUT THE AUTHOR HIMSELF</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARDS -->
+                <div v-for="moreArticle in moreArticles" class="col-4">
+                    <card :title="moreArticle.title" :text="moreArticle.text"
+                        :style="{ backgroundImage: 'url(' + this.urlBackground + moreArticle.img + ')' }"></card>
                 </div>
             </div>
-            <!-- CARDS -->
-            <div class="d-flex justify-content-between">
-                <card v-for="moreArticle in moreArticles" :title="moreArticle.title" :text="moreArticle.text"
-                    :style="{ backgroundImage: 'url(' + this.urlBackground + moreArticle.img + ')' }"></card>
-            </div>
-
         </div>
 
 
@@ -57,7 +61,7 @@ export default {
     }
 
     .my-card {
-        width: 30%;
+        text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
         min-height: 400px;
         display: flex;
         flex-direction: column;
