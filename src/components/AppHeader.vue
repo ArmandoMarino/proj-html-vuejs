@@ -28,12 +28,13 @@ header {
     right: 0;
     top: 0;
     left: 0;
+    bottom: 0;
     background-size: cover;
     background-color: transparent;
     z-index: 1;
 
     img {
-        height: 150px;
+        max-height: 150px;
         position: relative;
     }
 }

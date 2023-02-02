@@ -18,6 +18,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as*;
+
 nav {
     height: 20%;
 
@@ -28,15 +30,18 @@ nav {
 
         li {
             height: 50%;
-            margin-top: 5px;
             padding: 5px;
             text-transform: capitalize;
             font-weight: 600;
+            border-top: 2px solid transparent;
 
             a {
                 text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
                 padding: 20px;
+            }
 
+            li:hover {
+                border-top: 2px solid orange;
             }
         }
     }

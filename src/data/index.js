@@ -54,7 +54,6 @@ const eventsArticles = [
         'text': 'Lorem ipsum dolor sit amet, voluptatibus distinctio iure mollitia minus libero eius cum sint laboriosam deleniti exercitationem officia, qui magnam assumenda corporis. Illum, uno!',
         'img': 'event-07.jpg'
     }
-
 ]
 
 const moreArticles = [
@@ -75,7 +74,6 @@ const moreArticles = [
         'text': 'Lorem ipsum dolor sit amet.',
         'img': 'box-4.jpg'
     }
-
 ]
 
 
@@ -100,6 +98,21 @@ const recentArticles = [
         'img': 'thumb-08-2x-700x441.jpg',
         'author': 'admin',
     }
-
 ]
-export { navlist, criticsArticles, eventsArticles, moreArticles, recentArticles }
+
+
+const usefulLinks = [
+    "latest book",
+    'upcoming events',
+    'recent articles',
+    'buisness enquiries',
+    'visit my fondation',
+]
+
+const contactInfo = [
+    "63 E.Studebaker Street Balingrook, IL 60440",
+    'Phone: (800) 000-0000',
+    'Mobile: (800) 000-0000',
+    'email : info@your-company.com',
+]
+export { navlist, criticsArticles, eventsArticles, moreArticles, recentArticles, usefulLinks, contactInfo }
