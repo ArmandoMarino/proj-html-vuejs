@@ -9,37 +9,41 @@ export default {
 </script>
 
 <template>
-    <section id="hero" class="">
-        <!-- DAILY REVIEW -->
-        <div class="daily ">
-            <h1>Damon Vaughn</h1>
-            <h3>Best-selling author and the most
-                influential public intellectual in the
-                western world right now.
-            </h3>
-            <p>-The New York Times</p>
-        </div>
-
-        <!-- LATEST-BOOK -->
-        <div class="latest-book ">
-            <div class="t-latest-book d-flex">
-                <!-- LEFT -->
-                <img class="img-fluid" src="../assets/img/book-widget.png" alt="book-widget">
-                <!-- RIGHT -->
-                <div class="wrapper">
-                    <h4>Latest Book Release</h4>
-                    <h6>d. Vaughn autobiography</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Odio illo quidem fugit pariatur provident cupiditate sint quam
-                        consequatur numquam nam?
-                    </p>
+    <section id="hero">
+        <div class="container">
+            <div class="row">
+                <!-- TITLE LEFT -->
+                <div class="col-6 daily">
+                    <h1>Damon Vaughn</h1>
+                    <h3>Best-selling author and the most
+                        influential public intellectual in the
+                        western world right now.
+                    </h3>
+                    <p>-The New York Times</p>
+                </div>
+                <!-- BOOK SECTION ON THE RIGHT -->
+                <div class="col-4">
+                    <div class="latest-book ">
+                        <div class="t-latest-book d-flex">
+                            <!-- LEFT -->
+                            <img class="img-fluid" src="../assets/img/book-widget.png" alt="book-widget">
+                            <!-- RIGHT -->
+                            <div class="wrapper">
+                                <h4>Latest Book Release</h4>
+                                <h6>d. Vaughn autobiography</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Odio illo quidem fugit pariatur provident cupiditate sint quam
+                                    consequatur numquam nam?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <buy-buttons :placeHolderLeft="'Buy on Amazon'" :placeHolderRight="'Buy on Apple Store'"
+                                :iconAgencyLeft="'fa-amazon'" :iconAgencyRight="'fa-amazon'"></buy-buttons>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <buy-buttons :placeHolderLeft="'Buy on Amazon'" :placeHolderRight="'Buy on Apple Store'"
-                    :iconAgencyLeft="'fa-amazon'" :iconAgencyRight="'fa-apple'"></buy-buttons>
-            </div>
-
         </div>
     </section>
 </template>
@@ -58,7 +62,6 @@ export default {
     // DAILY LEFT SIDE
     .daily {
         width: 500px;
-        margin-left: 150px;
         text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
         font-family: 'Newsreader', serif;
 

@@ -13,10 +13,17 @@ export default {
 </script>
 
 <template>
-    <div id="about" class="text-center container">
-        <h1>{{ title }}</h1>
-        <h3>{{ text }}</h3>
-        <neutro-button class="button" label="Meet the Author"></neutro-button>
+    <div id="about" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>{{ title }}</h1>
+                    <h3>{{ text }}</h3>
+                    <neutro-button class="button" label="Meet the Author"></neutro-button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </template>
 

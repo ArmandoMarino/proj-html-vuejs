@@ -15,13 +15,13 @@ export default {
 </script>
 
 <template>
-    <header class="d-flex justify-content-between">
-        <div class="container">
+    <header>
+        <div class="">
             <div class="row">
                 <div class="col-3">
                     <img class="img-fluid" src="../assets/img/author-logo-round.png" alt="logo">
                 </div>
-                <div class="col-9">
+                <div class="col-8">
                     <nav-bar :lists="navlist"></nav-bar>
                 </div>
             </div>
@@ -32,10 +32,8 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    // height: 150px;
     position: absolute;
     right: 0;
-    top: 0;
     left: 0;
     background-size: cover;
     background-color: transparent;
