@@ -5,31 +5,36 @@ export default {
 </script>
 
 <template>
-    <!-- AGENCYS -->
-    <div id="agencys" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center p-3">
+    <!-- AGENCYS -------------------->
+    <div id="agencys">
+        <div class="container-fluid">
+            <div class="row p-1 p-md-3  justify-content-center">
+                <div class="col-6 col-md-2">
                     <img class="img-fluid" src="../../assets/img/ebay-logotan-2x.png" alt="ebay">
+                </div>
+                <div class="col-6 col-md-2">
                     <img class="img-fluid" src="../../assets/img/audible-logotan-2x.png" alt="audible">
+                </div>
+                <div class="col-6 col-md-2">
                     <img class="img-fluid" src="../../assets/img/bb-logotan-2x.png" alt="barnes&noble">
+                </div>
+                <div class="col-6 col-md-2">
                     <img class="img-fluid" src="../../assets/img/kindlefire-logotan-2x.png" alt="kindle">
                 </div>
             </div>
         </div>
-
     </div>
 
-    <!-- AUDIO-BOOK -->
+    <!-- AUDIO-BOOK ------------------->
     <div id="audio-book" class="pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-4 offset-2">
+                <div class="col-6 d-none d-lg-block ">
                     <!-- LEFT -->
                     <img class="img-fluid" src="../../assets/img/audible-app-2x.png" alt="audible">
                 </div>
 
-                <div class="col-4 d-flex justify-content-center flex-column text-center">
+                <div class="col-12 col-lg-6 d-flex justify-content-center flex-column text-center">
                     <!-- RIGHT -->
                     <div class="r-audio-book ">
                         <h2>New Audiobook</h2>
@@ -59,7 +64,6 @@ export default {
     background-color: $pm-cream;
 
     img {
-        width: 15%;
         padding: 1rem;
     }
 }
@@ -69,8 +73,6 @@ export default {
     background-image: url(../../assets/img/banner.jpg);
 
     .r-audio-book {
-        flex-basis: 30%;
-
         h6 {
             color: $pm-yellow;
             font-size: 14px;
