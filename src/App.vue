@@ -16,6 +16,9 @@ export default {
 
 <style lang="scss">
 @use './assets/scss/partials/variables' as *;
+// font-family: 'Cedarville Cursive', cursive;  HERO CURSIVE
+// font-family: 'Newsreader', serif;   PRIMARY FONT
+
 
 a {
   text-decoration: none;
