@@ -1,5 +1,5 @@
 <script>
-import buyButtons from './neutro_components/BuyButtons.vue';
+import buyButtons from '../neutro_components/buyButtons.vue';
 export default {
     name: 'AppHero',
     components: {
@@ -26,7 +26,7 @@ export default {
                     <div class="latest-book ">
                         <div class="t-latest-book d-flex">
                             <!-- LEFT -->
-                            <img class="img-fluid" src="../assets/img/book-widget.png" alt="book-widget">
+                            <img class="img-fluid" src="../../assets/img/book-widget.png" alt="book-widget">
                             <!-- RIGHT -->
                             <div class="wrapper">
                                 <h4>Latest Book Release</h4>
@@ -49,10 +49,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/partials/variables' as *;
+@use '../../assets/scss/partials/variables' as *;
 
 #hero {
-    background-image: url(../assets/img/hero-07-2x.jpg);
+    background-image: url(../../assets/img/hero-07-2x.jpg);
     background-position: center;
     background-size: cover;
     min-height: 600px;

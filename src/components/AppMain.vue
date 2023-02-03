@@ -1,5 +1,5 @@
 <script>
-import AppHero from './AppHero.vue';
+import AppHero from '../components/sub_components/AppHero.vue';
 import AboutSection from './sub_components/AboutSection.vue';
 import AudioBook from './sub_components/AudioBook.vue';
 import CriticsSection from './sub_components/CriticsSection.vue';
