@@ -25,7 +25,7 @@ export default {
 
 a {
   text-decoration: none;
-  color: white;
+  color: $pm-white;
 
   a:hover {
     color: $pm-yellow;
