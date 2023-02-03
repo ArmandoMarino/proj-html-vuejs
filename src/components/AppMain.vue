@@ -1,8 +1,8 @@
 <script>
 import AppHero from './AppHero.vue';
-import about from './sub_components/about.vue';
-import audioBook from './sub_components/audioBook.vue';
-import critics from './sub_components/critics.vue';
+import AboutSection from './sub_components/AboutSection.vue';
+import AudioBook from './sub_components/AudioBook.vue';
+import CriticsSection from './sub_components/CriticsSection.vue';
 import EventsSection from './sub_components/EventsSection.vue';
 import SubscribeSection from './sub_components/SubscribeSection.vue';
 import MoreSection from './sub_components/MoreSection.vue';
@@ -11,9 +11,9 @@ export default {
     name: 'AppMain',
     components: {
         AppHero,
-        about,
-        audioBook,
-        critics,
+        AboutSection,
+        AudioBook,
+        CriticsSection,
         EventsSection,
         SubscribeSection,
         MoreSection,
@@ -34,9 +34,9 @@ export default {
 <template>
     <main>
         <app-hero></app-hero>
-        <about :title="this.about.title" :text="this.about.text"></about>
+        <about-section :title="this.about.title" :text="this.about.text"></about-section>
         <audio-book></audio-book>
-        <critics></critics>
+        <critics-section></critics-section>
         <events-section></events-section>
         <subscribe-section></subscribe-section>
         <more-section></more-section>

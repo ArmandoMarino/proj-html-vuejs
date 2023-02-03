@@ -1,10 +1,10 @@
 <script>
 import { eventsArticles } from '../../data'
-import card from '../neutro_components/card.vue';
+import BaseCard from '../neutro_components/BaseCard.vue';
 export default {
     name: 'EventsSection',
     components: {
-        card
+        BaseCard
     },
     data() {
         return {
@@ -29,8 +29,8 @@ export default {
                 </div>
                 <!-- CARDS -->
                 <div v-for="eventsArticle in eventsArticles" class="col-12 col-md-6 col-lg-4 d-flex">
-                    <card :class="'thumb-card'" :title="eventsArticle.title" :thumbPath="eventsArticle.img"
-                        :text="eventsArticle.text"></card>
+                    <base-card :class="'thumb-card'" :title="eventsArticle.title" :thumbPath="eventsArticle.img"
+                        :text="eventsArticle.text"></base-card>
                 </div>
             </div>
 

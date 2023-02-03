@@ -1,11 +1,11 @@
 <script>
 import { recentArticles } from '../../data'
-import card from '../neutro_components/card.vue';
+import BaseCard from '../neutro_components/BaseCard.vue';
 import NeutroButton from '../neutro_components/NeutroButton.vue';
 export default {
     name: 'recentSection',
     components: {
-        card,
+        BaseCard,
         NeutroButton
     },
     data() {
@@ -35,15 +35,15 @@ export default {
                 <!-- CARDS -->
                 <div class="col-12 col-md-7">
                     <div class="big-card mb-sm-3">
-                        <card :class="'thumb-card'" :title="recentArticles[0].title" :thumbPath="recentArticles[0].img"
-                            :text="recentArticles[0].text"></card>
+                        <base-card :class="'thumb-card'" :title="recentArticles[0].title"
+                            :thumbPath="recentArticles[0].img" :text="recentArticles[0].text"></base-card>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <card :class="'thumb-card small-card'" :title="recentArticles[1].title"
-                        :thumbPath="recentArticles[1].img" :text="recentArticles[1].text"></card>
-                    <card :class="'thumb-card small-card'" :title="recentArticles[2].title"
-                        :thumbPath="recentArticles[2].img" :text="recentArticles[2].text"></card>
+                    <base-card :class="'thumb-card small-card'" :title="recentArticles[1].title"
+                        :thumbPath="recentArticles[1].img" :text="recentArticles[1].text"></base-card>
+                    <base-card :class="'thumb-card small-card'" :title="recentArticles[2].title"
+                        :thumbPath="recentArticles[2].img" :text="recentArticles[2].text"></base-card>
                 </div>
             </div>
         </div>

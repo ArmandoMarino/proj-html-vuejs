@@ -1,11 +1,11 @@
 <script>
 import { criticsArticles } from '../../data'
-import card from '../neutro_components/card.vue';
+import BaseCard from '../neutro_components/BaseCard.vue';
 import NeutroButton from '../neutro_components/NeutroButton.vue';
 export default {
     name: 'critics',
     components: {
-        card,
+        BaseCard,
         NeutroButton
     },
     data() {
@@ -41,21 +41,21 @@ export default {
             <div class="row">
                 <!-- BIG-CARD -->
                 <div class="col-12 col-md-7">
-                    <card :class="'big-card p-3'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
+                    <base-card :class="'big-card p-3'" :title="criticsArticles[0].title" :text="criticsArticles[0].text"
                         :image="criticsArticles[0].img" :alt="criticsArticles[0].title"
                         :daily="criticsArticles[0].daily" :author="criticsArticles[0].author">
-                    </card>
+                    </base-card>
                 </div>
                 <!-- SMALL-CARD -->
                 <div class="col-12 col-md-5 mt-sm-4">
-                    <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
+                    <base-card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[1].title"
                         :text="criticsArticles[1].text" :image="criticsArticles[1].img" :alt="criticsArticles[1].title"
                         :daily="criticsArticles[1].daily" :author="criticsArticles[1].author">
-                    </card>
-                    <card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
+                    </base-card>
+                    <base-card :class2="'bg-white'" :class="'small-card'" :title="criticsArticles[2].title"
                         :text="criticsArticles[2].text" :image="criticsArticles[2].img" :alt="criticsArticles[2].title"
                         :daily="criticsArticles[2].daily" :author="criticsArticles[2].author">
-                    </card>
+                    </base-card>
                 </div>
             </div>
         </div>

@@ -1,11 +1,11 @@
 <script>
 import { moreArticles } from '../../data'
 
-import card from '../neutro_components/card.vue';
+import BaseCard from '../neutro_components/BaseCard.vue';
 export default {
     name: 'MoreSection',
     components: {
-        card
+        BaseCard
     },
     data() {
         return {
@@ -31,8 +31,8 @@ export default {
                 </div>
                 <!-- CARDS -->
                 <div v-for="moreArticle in moreArticles" class="col-12 col-md-4 mt-3 ">
-                    <card :title="moreArticle.title" :text="moreArticle.text"
-                        :style="{ backgroundImage: 'url(' + this.urlBackground + moreArticle.img + ')' }"></card>
+                    <base-card :title="moreArticle.title" :text="moreArticle.text"
+                        :style="{ backgroundImage: 'url(' + this.urlBackground + moreArticle.img + ')' }"></base-card>
                 </div>
             </div>
         </div>
