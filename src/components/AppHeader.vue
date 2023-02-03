@@ -1,10 +1,10 @@
 <script>
 import { navlist } from '../data/index.js'
-import navBar from './neutro_components/NavBar.vue';
+import NavBar from './sub_components/NavBar.vue';
 export default {
     name: 'AppHeader',
     components: {
-        navBar,
+        NavBar,
     },
     data() {
         return {
