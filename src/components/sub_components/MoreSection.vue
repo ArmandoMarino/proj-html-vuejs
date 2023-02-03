@@ -68,9 +68,11 @@ export default {
         align-items: center;
         justify-content: end;
         border-bottom-right-radius: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
         // TODO
-        background: rgb(255, 255, 255);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 1, 1, 0.5270483193277311) 46%, rgba(0, 0, 0, 1) 100%);
+        // background: rgb(255, 255, 255);
+        // background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 1, 1, 0.5270483193277311) 46%, rgba(0, 0, 0, 1) 100%);
 
         h2 {
             font-weight: 600;

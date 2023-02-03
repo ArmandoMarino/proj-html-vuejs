@@ -1,5 +1,5 @@
 <script>
-import buyButtons from './neutro_components/buyButtons.vue';
+import buyButtons from './neutro_components/BuyButtons.vue';
 export default {
     name: 'AppHero',
     components: {
